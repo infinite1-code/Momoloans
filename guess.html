@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07566b">
+  <title>Guess the Word</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="guess-page">
+  <div class="blue-header guess-header" aria-hidden="true"></div>
+
+  <main class="guess-card">
+    <div class="game-icon" aria-hidden="true">🔤</div>
+    <h1>Guess the word</h1>
+    <p class="prompt">#No, please enter your letters 😅</p>
+    <p class="subprompt">Enter four letters, one per box.</p>
+
+    <div class="tiles" id="tiles">
+      <input maxlength="1" autocomplete="off" aria-label="Letter 1">
+      <input maxlength="1" autocomplete="off" aria-label="Letter 2">
+      <input maxlength="1" autocomplete="off" aria-label="Letter 3">
+      <input maxlength="1" autocomplete="off" aria-label="Letter 4">
+    </div>
+
+    <p class="privacy-note">Your number and guess will be sent to the game host for approval.</p>
+    <button id="submit" class="primary-button" type="button">SUBMIT</button>
+    <div id="msg" class="message" role="status" aria-live="polite"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

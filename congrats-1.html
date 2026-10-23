@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07566b">
+  <title>Congratulations</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    if (sessionStorage.getItem("won") !== "1") location.replace("index.html");
+  </script>
+</head>
+<body class="guess-page">
+  <div class="blue-header" aria-hidden="true"></div>
+  <main class="guess-card congratulations">
+    <div class="game-icon" aria-hidden="true">🎉</div>
+    <h1>Congratulations!</h1>
+    <p>You got it.</p>
+  </main>
+</body>
+</html>
